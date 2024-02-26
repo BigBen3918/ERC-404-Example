@@ -1,21 +1,41 @@
-import "dotenv/config"
-import { HardhatUserConfig } from "hardhat/config"
-import "@nomicfoundation/hardhat-toolbox"
-import "hardhat-gas-reporter"
+import "dotenv/config";
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomicfoundation/hardhat-toolbox";
 
 const config: HardhatUserConfig = {
-  solidity: { compilers: [{ version: "0.8.20" }, { version: "0.4.18" }] },
-  gasReporter: {
-    currency: "USD",
-    gasPrice: 21,
-    enabled: true,
-  },
-  networks: {
-    sepolia: {
-      url: `https://eth-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
-      accounts: [process.env.SEPOLIA_PRIVATE_KEY_1],
+  solidity: {
+    compilers: [{ version: "0.8.20" }, { version: "0.4.18" }],
+    settings: {
+      optimizer: {
+        enabled: true,
+      },
     },
   },
-}
+  networks: {
+    fantomtestnet: {
+      url: "https://rpc.testnet.fantom.network",
+      chainId: 4002,
+      accounts: [process.env.PRIVATE_KEY || ""],
+    },
+    sepolianet: {
+      url: "https://ethereum-sepolia.publicnode.com",
+      accounts: [process.env.PRIVATE_KEY || ""],
+    },
+    bsctestnet: {
+      url: "https://bsc-testnet.publicnode.com",
+      chainId: 97,
+      accounts: [process.env.PRIVATE_KEY || ""],
+    },
+  },
+  etherscan: {
+    apiKey: process.env.ETHER_API_KEY,
+  },
+  sourcify: {
+    enabled: true,
+  },
+  mocha: {
+    timeout: 20000,
+  },
+};
 
-export default config
+export default config;
