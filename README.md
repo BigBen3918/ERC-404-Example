@@ -1,6 +1,6 @@
 # ERC-404
 
-> 🚨🚨 This repo forked from [Pandora Github](https://github.com/Pandora-Labs-Org/erc404-legacy). 🚨🚨
+> 🚨🚨 This repo forked from [Pandora Github]([https://github.com/Pandora-Labs-Org/erc404-legacy](https://github.com/Pandora-Labs-Org/erc404)). 🚨🚨
 
 ## Changelog
 
