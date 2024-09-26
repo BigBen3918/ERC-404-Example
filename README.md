@@ -1,8 +1,6 @@
 # ERC-404
 
-> 🚨🚨 This repo contains the next version of ERC-404. It has not yet been fully tested or audited, and is not intended to be used in production yet. 🚨🚨
-
-> Please refer to [this repository](https://github.com/Pandora-Labs-Org/erc404-legacy) for the v1.0 version of ERC-404 that was released with Pandora.
+> 🚨🚨 This repo forked from [Pandora Github](https://github.com/Pandora-Labs-Org/erc404-legacy). 🚨🚨
 
 ## Changelog
 
@@ -58,7 +56,6 @@ To use:
 3. Run Simulate, and then expand the Input/Output section. The output on the right column will show the derived pool address.
 
 ## Useful Deployment Addresses
-
 ```
 WETH: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
 
@@ -75,12 +72,4 @@ SwapRouter02: 0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45
 NonfungiblePositionManager: 0xc36442b4a4522e871399cd717abdd847ab11fe88
 ```
 
-## License
-
-This software is released under the MIT License.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## Thanks for to Pandora Team 👍
